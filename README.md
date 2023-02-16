@@ -1,4 +1,4 @@
-# Nuxt 3 Minimal Starter
+# Vuetify 3 + Nuxt 3 Theme Component Example
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
