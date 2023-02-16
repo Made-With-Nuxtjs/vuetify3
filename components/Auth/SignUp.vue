@@ -23,45 +23,5 @@
 </template>
 
 <script setup>
-const user = useSupabaseUser();
-const { auth } = useSupabaseAuthClient();
-const supabase = useSupabaseClient();
-const loading = ref(false);
-const email = ref("");
-const handleLogin = async () => {
-    try {
-        console.log("Login");
-        loading.value = true;
-        const { error } = await supabase.auth.signInWithOtp({
-            email: email.value,
-            options: {
-                redirectTo: "http://localhost:3000/register",
-            },
-        });
-        if (error) throw error;
-        alert("Check your email for the login link!");
-    } catch (error) {
-        alert(error.error_description || error.message);
-    } finally {
-        loading.value = false;
-    }
-};
 
-watchEffect(() => {
-    if (user.value) {
-        navigateTo("/register");
-    }
-});
-
-const github_login = async () => {
-    const { error } = await supabase.auth.signInWithOAuth({
-        provider: "github",
-        options: {
-            redirectTo: "http://localhost:3000/register",
-        },
-    });
-    if (error) {
-        console.log("Error");
-    }
-};
 </script>

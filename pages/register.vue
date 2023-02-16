@@ -1,6 +1,7 @@
 <template>
     <v-main class="my-16">
         <v-card class="mx-auto" max-width="500">
+            <AuthAccount />
             <!-- <AuthAccount v-if="user" /> -->
             <!-- <AuthSignUp v-else /> -->
         </v-card>

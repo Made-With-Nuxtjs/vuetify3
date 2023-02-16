@@ -1,6 +1,6 @@
 <template>
     <v-card class="pa-4 ma-2" max-width="400">
-        <NuxtLink to="/" class="text-decoration-none text-black">
+        <NuxtLink to="/post/post" class="text-decoration-none text-black">
             <v-img loading="lazy" class="text-white align-start" lazy-src="https://picsum.photos/id/11/100/60" aspect-ratio="4 / 3" src="https://via.placeholder.com/1920x1080/eee?text=16:9">
                 <v-toolbar color="rgba(0, 0, 0, 0)">
                     <template v-slot:append>

@@ -4,7 +4,7 @@
             <v-row>
                 <v-col cols="12" sm="2" class="hidden-md-and-down">
                     <v-card class="mx-auto mb-4 rounded-lg" max-width="full">
-                        <CategoryTree />
+                        <!-- <CategoryTree /> -->
                     </v-card>
                     <v-card class="mx-auto mb-2 rounded-lg" max-width="full" elevation="1">
                         <v-img class="text-white align-end" height="400" src="https://via.placeholder.com/300x400" cover>
@@ -18,7 +18,9 @@
                         </v-img>
                     </v-card>
 
-                    <v-alert prominent variant="tonal" align="center" class="mb-4 text-uppercase">{{ post_category }}</v-alert>
+                    <v-alert prominent variant="tonal" align="center" class="mb-4 text-uppercase">
+                        <!-- {{ post_category }} -->
+                    </v-alert>
 
                     <v-row align="center">
                         <template v-for="(post, index) in posts" :key="index">

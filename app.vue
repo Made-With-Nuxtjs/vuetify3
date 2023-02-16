@@ -21,7 +21,7 @@
         <NuxtLink to="/search" class="text-decoration-none">
           <v-avatar size="32" class="mx-2" icon="mdi-magnify" variant="elevated"></v-avatar>
         </NuxtLink>
-        <NuxtLink to="/register" class="text-decoration-none">
+        <NuxtLink to="/" class="text-decoration-none">
           <v-avatar v-if="user" size="34" class="mx-2" variant="elevated">
             <v-img size="32" :src="avatar_url" alt="User"></v-img>
           </v-avatar>
