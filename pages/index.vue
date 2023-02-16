@@ -1,7 +1,7 @@
 <template>
 
     <Head>
-        <Title>Islam For Mankind</Title>
+        <Title>Vuetify3 Design</Title>
         <Meta name="description" content="Islam For Mankind" />
         <Style type="text/css" children="body { background-color: green; }" />
     </Head>
